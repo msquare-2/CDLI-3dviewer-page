@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en-US" prefix="og: http://ogp.me/ns#">
+<head>
+	<meta charset="utf-8"/>	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>
+		Threedviewer - Cuneiform Digital Library Initiative
+	</title>
+
+			<meta name="twitter:card" content="summary">
+	
+	<meta property="og:title" content="Threedviewer" />
+	<meta property="og:url" content="https://cdli.ucla.edu/3dviewer/P215518" />
+	<meta property="og:site_name" content="CDLI">
+	<meta name="twitter:site" content="@cdli_news">
+
+	
+	<link href="/favicon.ico" type="image/x-icon" rel="icon"/><link href="/favicon.ico" type="image/x-icon" rel="shortcut icon"/>	<link rel="stylesheet" href="/assets/css/main.css"/>	<link rel="stylesheet" href="/assets/css/font-awesome/css/font-awesome.min.css"/>	
+    <script src="/assets/js/popper.min.js"></script>	<script src="/assets/js/jquery.min.js"></script>	<script src="/assets/js/bootstrap.min.js"></script>	<script src="/assets/js/js.js"></script>	<script src="/assets/js/drawer.js" defer="defer"></script>    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-NPWM6ML');</script>			</head>
+
+<body>
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NPWM6ML&nojscript=true"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>	<!-- White translucent film  -->
+		<div class="translucent-film d-none" id="faded-bg"></div>
+	<!-- End White translucent film  -->
+
+	<!-- No script navbar -->
+		<noscript>
+			<nav aria-label="menubar" class="navbar navbar-expand-sm bg-light no-js-nav d-lg-none">
+				<!-- Links -->
+				<ul class="navbar-nav flex-row justify-content-around w-100">
+					<li class="nav-item">
+					<a class="nav-link mx-2" href="/browse">Browse</a>
+					</li>
+					<li class="nav-item">
+					<a class="nav-link mx-2" href="/">Search</a>
+					</li>
+					<li class="nav-item">
+					<a class="nav-link mx-2" href="#">About</a>
+					</li>
+											<li class="nav-item mx-2">
+							<a href="/login" class="nav-link">Login</a>						</li>
+						<li class="nav-item mx-2">
+							<a href="/register" class="nav-link">Register</a>						</li>
+									</ul>
+				<style>
+				.fa-bars{
+					display: none !important;
+				}
+				</style>
+			</nav>
+		</noscript>
+	<!-- end No script navbar -->
+
+	<header>
+		<div class="bg-foggy-grey navbar navbar-expand d-none d-lg-block">
+			<nav class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav ml-auto">
+				
+					<li class="publication-nav nav-item mx-3 dropdown">
+					<a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					Publications
+					</a>
+					<nav class="dropdown-menu">
+						<a class="dropdown-item" href="/articles/cdlj"> Cuneiform Digital Library Journal</a>
+						<a class="dropdown-item" href="/articles/cdlb"> Cuneiform Digital Library Bulletin</a>
+                        <a class="dropdown-item" href="/articles/cdln">Cuneiform Digital Library Notes</a>
+                        <a class="dropdown-item" href="/articles/cdlp">Cuneiform Digital Library Preprint</a>
+					</nav>
+
+				</li>
+
+					<li class="nav-item mx-3">
+						<a class="nav-link" href="/resources">Resources</a>
+					</li>
+
+
+										<li class="nav-item mx-3">
+							<a href="/login" class="nav-link">Login</a>						</li>
+						<li class="nav-item mx-3 pr-5">
+							<a href="/register" class="nav-link">Register</a>						</li>
+									</ul>
+			</nav>
+		</div>
+
+		<div class="header navbar navbar-expand-lg bg-transparent py-0" id="navbar-main">
+			<div class="container-fluid d-flex align-items-center justify-content-between my-5">
+				<a tabindex="0" class="navbar-brand logo" href="/">
+					<div class="navbar-logo">
+					<img src="/images/cdlilogo.svg" class="d-none d-md-block cdlilogo" alt="CDLI-logo" />
+						<img src="/images/logo-no-text.svg" class="d-md-none" alt="CDLI-logo" />
+					</div>
+				</a>
+
+				<nav class="collapse navbar-collapse" id="navbarText">
+					<ul class="navbar-nav ml-auto">
+
+						<li class="nav-item mx-3 ">
+							<a href="/browse" class="nav-link">Browse</a>						</li>
+
+						<li class="nav-item mx-3">
+							<a class="nav-link" href="/contribute">Contribute</a>
+						</li>
+						<li class="nav-item mx-3">
+							<a class="nav-link" href="#">About</a>
+						</li>
+						<li class="nav-item mx-3 mr-5 dropdown">
+							<a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Search </a>
+							<nav class="dropdown-menu border-0 shadow">
+								<a class="dropdown-item" href="/">Search</a>
+								<a class="dropdown-item" href="/advancedsearch">Advanced search</a>
+								<a class="dropdown-item" href="/SearchSettings">Search settings</a>
+								<a class="dropdown-item" href="/cqp4rdf">Corpus search</a>
+							</nav>
+						</li>
+					</ul>
+				</nav>
+				<nav aria-label="menubar">
+				<a tabindex="0" class="d-sm-block d-lg-none bg-transparent" id="menubar" onclick="openSlideMenu()">
+					<span class="fa fa-bars fa-2x"></span>
+				</a>
+				</nav>
+<!-- Start of Side Menu bar for small devices -->
+				<div role="menubar" id="side-menu" class="side-nav shadow d-none">
+					<button aria-label="Close" id="close-button" class="sidebar-btn-close px-3 border-0" onclick="closeSlideMenu()">
+						×
+					</button>
+					<a href="/browse" class="mt-5">Browse</a>
+					<a href="/contribute">Contribute</a>
+					<a href="#">About</a>
+					<a href="/resources">Resources</a>
+										<a  data-toggle="collapse" href="#collapseExampleSearch" role="button" aria-expanded="false" aria-haspopup="true" aria-controls="collapseExampleSearch" class="border-0 mb-1">
+						Search <span id="drawer-arrowSearch" class="fa fa-angle-down float-right" aria-hidden="true"></span>
+					</a>
+					<div class="collapse embedded-links" id="collapseExampleSearch">
+						<a class="ml-5" href="/">Search</a>
+						<a class="ml-5" href="/advancedsearch">Advanced search</a>
+						<a class="ml-5" href="/SearchSettings">Search settings</a>
+						<a class="ml-5" href="/cqp4rdf">Corpus search</a>
+					</div>
+
+					<a  data-toggle="collapse" href="#collapseExamplePublication" role="button" aria-expanded="false" aria-haspopup="true" aria-controls="collapseExamplePublication" class="border-0 mb-1">
+						Publications<span id="drawer-arrowPublication" class="fa fa-angle-down float-right" aria-hidden="true"></span>
+					</a>
+					<div class="collapse embedded-links" id="collapseExamplePublication">
+							<a class="dropdown-item" href="/articles/cdlj" aria-label="Cuneiform Digital Library Journal">CDLJ</a>
+							<a class="dropdown-item" href="/articles/cdlb" aria-label="Cuneiform Digital Library Bulletin">CDLB</a>
+							<a class="dropdown-item" href="/articles/cdln" aria-label="Cuneiform Digital Library Notes">CDLN</a>
+							<a class="dropdown-item" href="/articles/cdlp" aria-label="Cuneiform Digital Library Preprint">CDLP</a>
+					</div>
+
+
+											<a class="border-0 mb-1" href="/login">Login</a>
+						<a class="border-0 mb-1" href="/register">Register</a>
+									</div>
+<!-- End of Side Menu bar for small devices -->
+
+
+			</div>
+		</div>
+	</header>
+
+	<div class="container-fluid text-center contentWrapper">
+				<div>
+   <link rel="stylesheet" href="/assets/css/3dviewer.css"/>   <script src="/assets/js/3dviewer/jquery-3.1.0.min.js"></script>   <script src="/assets/js/3dviewer/three.min.js"></script>   <script src="/assets/js/3dviewer/PLYLoader.js"></script>   <script src="/assets/js/3dviewer/Detector.js"></script>   <script src="/assets/js/3dviewer/Arcball.js"></script>   <script src="/assets/js/3dviewer/InteractiveViewer.js"></script>   <meta charset="utf-8"/>   
+</div>
+ 
+  
+
+<div class="canvas">
+   <div id="help">
+      <div class="help-header">      
+         CONTROLS GUIDE
+         <div class="help-icon">
+              <img id="help-close" src="../images/3dviewericons/closeicon.svg" alt="Help close icon">
+         </div>
+      </div>
+      <div class="help-body animate">
+         <div class="row">
+            <div class="col"><img src="../images/3dviewericons/rotate.svg" alt="Rotate icon">
+               <span class="heading">Rotate</span><br><span class="content"> Drag model to rotate in 360 degrees.</span>
+            </div>
+            <div class="col"><img src="../images/3dviewericons/zoomin.svg" alt="Zoom IN icon">
+               <span class="heading">Zoom IN</span><br><span class="content"> Makes model enlarged on every click.</span>
+            </div>
+            <div class="col"><img src="../images/3dviewericons/undo.svg" alt="Undo icon">
+               <span class="heading">Undo</span><br><span class="content"> Get back model to previous of last interaction.</span>
+            </div>
+               <div class="col"><img src="../images/3dviewericons/light.svg" alt="Light icon">
+            <span class="heading">Light</span><br><span class="content"> Drag mouse to change light direction of better view.</span>
+            </div>
+         </div>
+         <div class="row">
+            <div class="col"><img src="../images/3dviewericons/move.svg" alt="Move icon">
+               <span class="heading">Move</span><br><span class="content"> Drag model to change position.</span>
+            </div>
+            <div class="col"><img src="../images/3dviewericons/zoomout.svg" alt="Zoom out icon">
+               <span class="heading">Zoom Out</span><br><span class="content"> Makes model small on every click.</span>
+            </div>
+            <div class="col"><img src="../images/3dviewericons/reset.svg" alt="Reset icon">
+               <span class="heading">Reset</span><br><span class="content"> Get back model to actuall position.</span>
+            </div>
+            <div class="col"><img src="../images/3dviewericons/fullscreen.svg" alt="Fullscreen icon">
+               <span class="heading">Full-Screen</span><br><span class="content"> Makes viewer cover fullscreen.</span>
+            </div>
+         </div>
+         
+      </div>           
+   </div>
+       <div class="threeDcontainer" id="canvas" style="border: none;"></div>
+       <div id="progress">
+           <div id="progressGif"><img src="../images/3dviewericons/progress.gif"></div>
+           <div id="message">Loading 3D model data ...</div>     
+       </div>
+
+</div>
+       <p class="infoText">3D model view of CDLI <a id="cdlilink">P215518</a></p>
+       <p class="infoText">
+              </p>
+       <p class="infoText">3D Viewer Designed by <a href="http://virtualcuneiform.org/">The Virtual Cuneiform Tablet Reconstruction Project</a></p>
+	</div>
+
+	<noscript>
+		<p role="alert" class="alert alert-danger alert-dismissible fade show textcenter">Your browser does not support javascript please enable it for better experince!</p>
+	</noscript>
+
+
+	<footer>
+		<div class="container">
+			<div>
+				<div class="row footer-1 py-5">
+					<section aria-label="Navigate" class="col-lg-3 d-none d-lg-block">
+						<h2 class="heading">Navigate</h2>
+						<p><a href="/browse">Browse collection</a></p>
+						<p><a href="/contribute">Contribute</a></p>
+						<p><a href="#">About CDLI</a></p>
+						<p><a href="#">Search collection</a></p>
+					</section>
+					<section aria-label="Acknowledgement" class="col-md-6 col-lg-4">
+						<h2 class="heading">Acknowledgement</h2>
+						<p class="backers">
+                            Support for this initiative has been generously provided by the
+							<a href="https://mellon.org/" target="_blank">Mellon Foundation</a>,
+                            the <a href="https://www.nsf.gov/" target="_blank" aria-label="National Science Foundation">NSF</a>,
+							the <a href="https://www.neh.gov/" target="_blank" aria-label="National Endowment for the Humanities">NEH</a>,
+							the <a href="https://www.imls.gov/" target="_blank" aria-label="Institute of Museum and Library Services">IMLS</a>,
+							the <a href="https://www.mpg.de/en" target="_blank" aria-label="Max-Planck-Gesellschaft">MPS</a>,
+							<a href="http://www.ox.ac.uk/" target="_blank">Oxford University</a>
+							and <a href="http://www.ucla.edu/" target="_blank" aria-label="University of California">UCLA</a>,
+							with additional support
+                            from <a href="https://www.sshrc-crsh.gc.ca/home-accueil-eng.aspx" target="_blank" aria-label="Social Sciences and Humanities Research Council">SSHRC</a> and
+							the <a href="https://www.dfg.de/" target="_blank" lang="de" aria-label="Deutsche Forschungsgemeinschaft">DFG</a>.
+							Computational resources and network services are provided by
+							<a href="https://humtech.ucla.edu/" target="_blank" aria-label="University of California HumTech">UCLA’s HumTech</a>,
+                            <a href="https://www.mpiwg-berlin.mpg.de/" target="_blank" aria-label="Max Planck Institute for the History of Science ">MPIWG</a>,
+							and <a href="https://www.computecanada.ca/" target="_blank">Compute Canada</a>.
+                        </p>
+					</section>
+                    <div class="col-lg-1 d-none d-lg-flex"></div>
+					<section aria-label="Contact Us" class="col-md-6 col-lg-4 contact">
+						<h2 class="heading">Contact Us</h2>
+						    <ul class="pl-0">
+						        <li style="list-style-type : none">Cuneiform Digital Library Initiative</li>
+						        <li style="list-style-type : none">Linton Rd, Oxford OX2 6UD</li>
+						        <li style="list-style-type : none">United Kingdom</li>
+					        </ul>
+						<div class="d-flex">
+							<div class="twitter">
+								<a href="https://twitter.com/cdli_news" target="_blank" aria-label="CDLI-twitter-page">
+									<span class="fa fa-twitter" aria-hidden="true"></span>
+								</a>
+							</div>
+							<div class="mail">
+								<a href="mailto:cdli@ucla.edu" target="_blank" aria-label="mail-to-CDLI">
+									<span class="fa fa-envelope fa-3x" aria-hidden="true"></span>
+								</a>
+							</div>
+							<div> <a href="https://opencollective.com/cdli/donate" class="btn donate" role="button" target="_blank">Donate</a></div>
+						</div>
+					</a>
+					</section>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="footer-end p-4">
+	<div class="text-center text-white">
+		<p class="mb-0">© 2019-2020 Cuneiform Digital Library Initiative.</p>
+	</div>
+</div>
+</footer>
+<script id="__debug_kit" data-id="2c05d942-db9b-4377-b8ba-8253acf0f96e" data-url="http://localhost:2354/" src="/debug_kit/js/toolbar.js?1624950524"></script></body>
+</html>
