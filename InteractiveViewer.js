@@ -192,7 +192,7 @@ $(function () {
    $("#progress").show();
    let artifact_no = objectID.replace( /^\D+/g, '');	
    //$("#cdlilink").text(objectID);
-   $("#cdlilink").attr("href", "/artifacts/" + artifact_no);
+   $("#cdlilink").attr("href", "#");
 	animate();
 	if(N==1) onRotateClick();
 });
