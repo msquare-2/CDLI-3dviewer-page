@@ -53,15 +53,15 @@ $(function () {
 
 	// Setup iconbar
 	var icons = $("<div>", { id: "iconbar" , class: "icons"});
-	icons.append($("<img>", { id: "rIcon", src: "../images/3dviewericons/rotate.svg", alt: "Rotate icon", title: "Rotate", onMouseDown: "mouseDownLightCheck();", onclick: "onRotateClick();", ontouchstart: "onRotateClick();" }));
-	icons.append($("<img>", { id: "mIcon", src: "../images/3dviewericons/move.svg", alt: "Move icon", title: "Move", onMouseDown: "mouseDownLightCheck();", onclick: "onMoveClick();", ontouchstart: "onMoveClick();", style: "margin-bottom:18px" }));
-	icons.append($("<img>", { id: "ziIcon", src: "../images/3dviewericons/zoomin.svg", alt: "ZoomIn icon", title: "Zoom In", onMouseDown: "mouseDownLightCheck();", onclick: "onZoomInClick();", ontouchstart: "onZoomInClick();" }));	
-	icons.append($("<img>", { id: "ziIcon", src: "../images/3dviewericons/zoomout.svg", alt: "ZoomOut icon", title: "Zoom Out", onMouseDown: "mouseDownLightCheck();", onclick: "onZoomOutClick();", ontouchstart: "onZoomOutClick();", style: "margin-bottom:18px"   }));		
-	icons.append($("<img>", { id: "uIcon", src: "../images/3dviewericons/undo.svg", alt: "Undo icon", title: "Undo", onMouseDown: "mouseDownLightCheck();", onclick: "onUndoClick();", ontouchstart: "onUndoClick();"}));
-	icons.append($("<img>", { id: "xIcon", src: "../images/3dviewericons/reset.svg", alt: "Reset icon", title: "Reset", onMouseDown: "mouseDownLightCheck();", onclick: "onResetClick();", ontouchstart: "onResetClick();", style: "margin-bottom:18px"  }));
-	icons.append($("<img>", { id: "lIcon", src: "../images/3dviewericons/light.svg", alt: "Light icon", title: "Lighting", onMouseDown: "mouseDownLightCheck();", onclick: "onLightClick();", ontouchstart: "onLightClick();" }));	
-	icons.append($("<img>", { id: "fIcon", src: "../images/3dviewericons/fullscreen.svg", alt: "Fullscreen icon", title: "Fullscreen", onMouseDown: "mouseDownLightCheck();", onclick: "onFullScreenClick();", ontouchstart: "onFullScreenClick();" }));
-	icons.append($("<img>", { id: "hIcon", src: "../images/3dviewericons/helpicon.svg", alt: "Help icon", title: "Help", onclick: "onhelpclick();", ontouchstart: "onhelpclick();" }));
+	icons.append($("<img>", { id: "rIcon", src: "rotate.svg", alt: "Rotate icon", title: "Rotate", onMouseDown: "mouseDownLightCheck();", onclick: "onRotateClick();", ontouchstart: "onRotateClick();" }));
+	icons.append($("<img>", { id: "mIcon", src: "move.svg", alt: "Move icon", title: "Move", onMouseDown: "mouseDownLightCheck();", onclick: "onMoveClick();", ontouchstart: "onMoveClick();", style: "margin-bottom:18px" }));
+	icons.append($("<img>", { id: "ziIcon", src: "zoomin.svg", alt: "ZoomIn icon", title: "Zoom In", onMouseDown: "mouseDownLightCheck();", onclick: "onZoomInClick();", ontouchstart: "onZoomInClick();" }));	
+	icons.append($("<img>", { id: "ziIcon", src: "zoomout.svg", alt: "ZoomOut icon", title: "Zoom Out", onMouseDown: "mouseDownLightCheck();", onclick: "onZoomOutClick();", ontouchstart: "onZoomOutClick();", style: "margin-bottom:18px"   }));		
+	icons.append($("<img>", { id: "uIcon", src: "undo.svg", alt: "Undo icon", title: "Undo", onMouseDown: "mouseDownLightCheck();", onclick: "onUndoClick();", ontouchstart: "onUndoClick();"}));
+	icons.append($("<img>", { id: "xIcon", src: "reset.svg", alt: "Reset icon", title: "Reset", onMouseDown: "mouseDownLightCheck();", onclick: "onResetClick();", ontouchstart: "onResetClick();", style: "margin-bottom:18px"  }));
+	icons.append($("<img>", { id: "lIcon", src: "light.svg", alt: "Light icon", title: "Lighting", onMouseDown: "mouseDownLightCheck();", onclick: "onLightClick();", ontouchstart: "onLightClick();" }));	
+	icons.append($("<img>", { id: "fIcon", src: "fullscreen.svg", alt: "Fullscreen icon", title: "Fullscreen", onMouseDown: "mouseDownLightCheck();", onclick: "onFullScreenClick();", ontouchstart: "onFullScreenClick();" }));
+	icons.append($("<img>", { id: "hIcon", src: "helpicon.svg", alt: "Help icon", title: "Help", onclick: "onhelpclick();", ontouchstart: "onhelpclick();" }));
 	$("#canvas").append(icons);
 	updateIcons("#rIcon");
 	$(document).on('webkitfullscreenchange mozfullscreenchange fullscreenchange MSFullscreenChange', onFullScreenChange);
@@ -361,7 +361,7 @@ function onFullScreenChange() {
 		$(".canvas").css({ position: 'relative' });
 		$(".canvas").position({ top: 0, left: 0 });
 		$("#threeDrenderer").css({border: "1px solid #A0A0A0"});
-		$('#fIcon').attr("src", "../images/3dviewericons/fullscreen.svg");
+		$('#fIcon').attr("src", "fullscreen.svg");
 	} else {
 		// Set to full screen
 		containerpos = $("#canvas").offset();
@@ -369,7 +369,7 @@ function onFullScreenChange() {
         viewHeight = screen.height;
 		$(".canvas").css({ position: 'fixed', top: 0, left: 0 });
 		$("#threeDrenderer").css({border: "none"});
-		$('#fIcon').attr("src", "../images/3dviewericons/unfullscreen.svg");
+		$('#fIcon').attr("src", "unfullscreen.svg");
 	}
 
 	$("#canvas").height(viewHeight);
@@ -462,7 +462,7 @@ function calcMovementVector() {
 
 function loadFrag(objectID, fragIndex){
     var loader = new THREE.PLYLoader();
-    loader.load('/dl/vcmodels/' + objectID + '.ply', function(geometry) {
+    loader.load(objectID + '.ply', function(geometry) {
 		// on ply loading complete
        geometry.computeBoundingSphere();
        geometry.computeFaceNormals();
@@ -478,7 +478,7 @@ function loadFrag(objectID, fragIndex){
 			});
 		else
 			material = fragmaterial;
-       textureLoader.load('/dl/vcmodels/' + objectID + '.jpg', function(texture) {
+       textureLoader.load(objectID + '.jpg', function(texture) {
 			// OnLoad function
 			material.map = texture;
 			frags[fragIndex] = new THREE.Mesh(geometry, material);
